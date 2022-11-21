@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sign-Box {
+  width: 350px;
+  padding: 20px 0px;
+}
+.Header-name {
+  margin-bottom: 30px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(48, 48, 48);
+}
+input,
+select {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  appearance: none;
+}
+input::placeholder {
+  color: rgb(118, 118, 118);
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.forgot-password {
+  text-align: center;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.password-box {
+  position: relative;
+  width: 350px;
+  /* background-color: #D20E0E; */
+}
+.password {
+  margin: 20px 0px;
+  width: 310px;
+}
+.password-icon {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  cursor: pointer;
+  width: 25px;
+}
+.login {
+  background-color: #d20e0e;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
   color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none !important;
 }
